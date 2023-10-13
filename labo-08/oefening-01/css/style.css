@@ -37,10 +37,9 @@ li {
   text-align: center;
   padding: 0.5rem;
   flex: 100%;
-  margin-bottom: 1rem;
 }
 ul {
-  margin: 0 2rem;
+  margin: 1rem 2rem;
 }
 .lijst-1 {
   display: flex;
