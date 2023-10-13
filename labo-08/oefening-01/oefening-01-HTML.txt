@@ -1,0 +1,54 @@
+  <body>
+    <main class="container">
+      <h1>flex & media-queries</h1>
+      <h2>mobile first</h2>
+      <p>
+        Elke laag begint met een minimale viewport- of schermgrootte en is
+        automatisch van toepassing op de grotere apparaten, tenzij deze wordt
+        overschreven.
+      </p>
+      <h2>5 niveaus en 6 breakpoints</h2>
+      <p>
+        small devices: gsm, 576px en groter<br />
+        medium devices: tablets, 768px en groter<br />
+        large devices: desktops, 992px en groter<br />
+        x-large devices: grote desktops, 1200px en groter<br />
+        xx-large devices: heel grote desktops, 1400px en groter<br />
+      </p>
+      <ul class="lijst-1">
+        <li class="kleur-1">één</li>
+        <li class="kleur-1">twee</li>
+        <li class="kleur-1">drie</li>
+      </ul>
+
+      <ul class="lijst-2">
+        <li class="kleur-2">één</li>
+        <li class="kleur-2">twee</li>
+        <li class="kleur-2">drie</li>
+      </ul>
+
+      <ul class="lijst-3">
+        <li class="kleur-3">één</li>
+        <li class="kleur-3">twee</li>
+        <li class="kleur-3">drie</li>
+      </ul>
+
+      <ul class="lijst-4">
+        <li class="kleur-4">één</li>
+        <li class="kleur-4">twee</li>
+        <li class="kleur-4">drie</li>
+      </ul>
+
+      <ul class="lijst-5">
+        <li class="kleur-5">één</li>
+        <li class="kleur-5">twee</li>
+        <li class="kleur-5">drie</li>
+      </ul>
+
+      <ul class="lijst-6 kleur-xxl">
+        <li class="kleur-6">één</li>
+        <li class="kleur-6">twee</li>
+        <li class="kleur-6">drie</li>
+      </ul>
+    </main>
+  </body>

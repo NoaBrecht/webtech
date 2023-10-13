@@ -1,0 +1,10 @@
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Don't</a></li>
+			<li><a href="#">Give</a></li>
+			<li><a href="#">Up</a></li>
+			<li><a href="#">Ever!</a></li>
+		</ul>
+	</nav>
+</body>
