@@ -1,0 +1,271 @@
+@import url(fonts.css);
+:root {
+  --primary-color: rgb(231, 162, 80);
+  --secundary-color: rgb(117, 119, 122);
+  --tertiary-color: rgb(100, 100, 100);
+
+  --bg-color: rgb(1, 6, 17);
+  --link-color: var(--primary-color);
+
+  --container-padding: 2rem 10rem;
+}
+
+
+html,
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: var(--primary-color);
+  height: 100vh;
+  width: 100vw;
+}
+
+/*--- algemeen ---*/
+h1 {
+  color: var(--secondary-color);
+  font-family: grafitti;
+  font-size: 6rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  padding: 6rem 4rem 4rem 8rem;
+}
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: var(--tertiary-color);
+  padding-bottom: 1rem;
+  text-align: justify;
+}
+a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--link-color);
+}
+figcaption {
+  color: white;
+  font-size: 0.8rem;
+  padding-top: 1rem;
+}
+.left {
+  width: 66%;
+  padding: 3rem;
+}
+.right {
+  width: 34%;
+  padding: 3rem;
+}
+
+/*--- header ---*/
+header {
+  padding: 1rem 4rem;
+  background-color: var(--bg-color);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  padding: 1rem;
+}
+.logo img {
+  max-width: 100px;
+}
+
+nav {
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  margin: 4rem 1.5rem 0 0;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/*--- teaser ---*/
+#teaser{
+  font-family: graffiti;
+  background-image: url(../assets/images/face.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*--- main ---*/
+main {
+  max-width: 100rem;
+  margin: auto;
+}
+
+/*--- portfolio ---*/
+#portfolio{
+  display:flex;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+#portfolio-title {
+  font-size: 2rem;
+  padding: 1rem 3rem 0 3rem;
+}
+.portfolio-item {
+  width: 26rem;
+  padding: 0 0.5rem 2rem 0;
+}
+.portfolio-item h2 {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  padding: 0 0 1rem 1.5rem;
+  transform: translateY(-3.7rem);
+  margin-bottom: -3.7rem;
+}
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: 0.3s opacity, transform 0.3s;
+}
+.portfolio-item img:hover {
+  opacity: 0.7;
+  transform: scale(0.975);
+}
+.portfolio-item figcaption {
+  color: white;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  padding: 0 0 1rem 1.5rem;
+  transform: translateY(-1.7rem);
+  margin-bottom: -1.7rem;
+}
+
+/*--- contact ---*/
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: auto;
+  justify-content: center;
+  gap: 3rem;
+  padding: var(var(--container-padding));
+}
+.contactform h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.2rem;
+}
+.contactform label {
+  font-size: 0.9rem;
+}
+.contactform input,
+.contactform textarea {
+  width: 90%;
+  background: transparent;
+  border: 0;
+  border-bottom: solid 2px var(--tertiary-color);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+.contactform textarea {
+  margin-bottom: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contactform .contactbtn {
+  width: 10rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  border: solid 2px var(--tertiary-color);
+  padding: 0.4rem 0;
+}
+address {
+  color: var(--tertiary-color);
+}
+
+/* MAP */
+#map { height: 180px; }
+
+/*--- footer ---*/
+footer {
+  background-color: var(--primary-color);
+}
+footer p {
+  color: white;
+  font-size: 0.8rem;
+  padding: 1rem 0 0;
+  text-align: center;
+}
+footer p:last-of-type {
+  padding: 0 0 1rem;
+}
+footer p a {
+  color: white;
+  text-decoration: underline;
+}
+
+/*--------------------*/
+/*--- mediaqueries ---*/
+/*--------------------*/
+@media all and (max-width: 768px) {
+  header,
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    margin: 1rem auto;
+  }
+  nav a {
+    margin: 1rem 0;
+  }
+  #search {
+    display: none;
+  }
+  h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  #contact {
+    flex-wrap: wrap;
+  }
+  #portfolio {
+    margin: 2rem 0;
+    padding: 0rem;
+  }
+  .portfolio-item{
+    width: 100%;
+    height: auto;
+  }
+  .left,
+  .right {
+    width: 100%;
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .right {
+    padding-bottom: 3rem;
+  }
+}

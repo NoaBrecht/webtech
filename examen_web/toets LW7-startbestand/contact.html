@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Streetart from Antwerp" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Urban Street Zone</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- LEAFLET JS -->
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <img src="assets/icons/logo.jpg" alt="Logo Urban Street Zone" />
+      </a>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="index.html#portfolio">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+    <main>
+      <section id="contact">
+        <article class="left">
+          <h2>Contact form</h2>
+          <form action="#" class="contactform" id="contactform">
+            <label for="name">name<span>*</span></label
+            ><br />
+            <input type="text" name="name" id="name" /><br />
+            <label for="email">email<span>*</span></label
+            ><br />
+            <input type="email" name="email" id="email" /><br />
+            <label for="message">message<span>*</span></label
+            ><br />
+            <textarea name="message" id="message" rows="6"></textarea><br />
+            <input type="submit" value="Send" class="contactbtn" />
+          </form>
+        </article>
+        <article class="right">
+          <h2>Contact info</h2>
+          <address>
+            Urban Street Zone<br />
+            Antwerp City<br />
+            <br />
+            e-mail: <a href="mailto:mail@student.ap.be"> mail@student.ap.be</a
+            ><br />
+            tel: +32 123 / 45 67 89
+          </address>
+          <div id="map"></div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>2023 &COPY; Alle rechten voorbehouden</p>
+      <p>Urban street zone | webtechnologie |<a href="https://ap.be" target="_blank">AP Hogeschool</a>
+    </p>
+    </footer>
+  </body>
+</html>
