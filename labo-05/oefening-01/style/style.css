@@ -1,9 +1,0 @@
-:root {
-  --h2: #7d7d7d; /* blue */
-  --paragraaf: #232226; /* gray */
-  --accent-color: #ffc107; /* yellow */
-}
-html,
-body {
-  box-sizing: border-box;
-}
