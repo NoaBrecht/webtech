@@ -1,0 +1,1 @@
+document.getElementById("myImage").src = "https://gaming.lenovo.com/cfs-file/__key/telligent-evolution-components-attachments/01-93-00-00-00-00-23-66/highways-4k.png";
