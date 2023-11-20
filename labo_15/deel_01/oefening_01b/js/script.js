@@ -1,7 +1,8 @@
 function geefBoodschap() {
     let Voornaam = document.getElementById('voornaam').value;
-
+    Voornaam = Voornaam.charAt(0).toUpperCase() + Voornaam.slice(1);
     let Achternaam = document.getElementById('achternaam').value;
+    Achternaam = Achternaam.charAt(0).toUpperCase() + Achternaam.slice(1);
     let leeftijd = document.getElementById('leeftijd').value;
     let boodschap;
     if (Voornaam == "" || Achternaam == "") {
