@@ -25,4 +25,3 @@ function geefBoodschap() {
 let eBoodschap = document.getElementById('boodschap');
 
 eBoodschap.addEventListener('blur', geefBoodschap, false);
-// 'blur' is één van de vele DOM events die wordt aangeroepen
